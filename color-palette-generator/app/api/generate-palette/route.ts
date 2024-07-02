@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     // try to parse result into json array
     const palettes = JSON.parse(result);
     // sort palettes by hex color code
-    palettes.forEach(palette => palette.sort());
+    palettes.forEach((palette: any[]) => palette.sort());
     return NextResponse.json({ palettes });
   } catch (error) {
     console.error('Error:', error);
