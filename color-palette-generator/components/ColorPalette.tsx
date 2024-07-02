@@ -87,7 +87,7 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ palette }) => {
               className="w-full h-full transition-colors duration-500 ease-in-out"
               style={{ backgroundColor: color }}
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover/color:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover/color:opacity-100 transition-opacity duration-300">
               {color.toUpperCase()}
             </div>
           </div>
